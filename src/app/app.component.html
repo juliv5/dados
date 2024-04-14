@@ -1,16 +1,21 @@
-<h1>App Dados</h1>
-<div class="card" style="margin: 48px;" >
+<h1 class="title">App Dados</h1>
+<div class="card" style="margin: 48px;">
   <div class="jumbotrom text-center">
-    <button class="btn btn-success btn-lg">Tirar
+    <button class="btn btn-success btn-lg" (click)="lanzarDados()">Tirar
       Dados</button>
     <br>
     <img class="img" [src]="dadoIzquierdo">
     <img class="img" [src]="dadoDerecho">
+    <h1>Listo</h1>
+    <h1 *ngIf="numero1 === numero2"><span class="btn btn-success">Ganaste!!</span></h1>
+    
   </div>
 </div>
 
+<br>
 <div class="boton">
-  <a class="btn btn-primary" href="https://github.com/juliv5/dados" target="_blank">Ir al Repositorio <i class="bi bi-github"></i> </a>
+  <a class="btn btn-primary" href="https://github.com/juliv5/dados" target="_blank">Ir al Repositorio <i
+      class="bi bi-github"></i> </a>
 </div>
 <footer>Juliana Velandia Todos los derechos reservados</footer>
 <router-outlet />
