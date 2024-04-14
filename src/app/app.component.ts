@@ -11,8 +11,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'dados';
-  dadoIzquierdo = '../assets/img/dice1.png';
-  dadoDerecho = '../assets/img/dice4.png';
+  dadoIzquierdo :string = '../assets/img/dice1.png';
+  dadoDerecho: string = '../assets/img/dice4.png';
   numero1: number = 0;
   numero2: number = 0;
 
